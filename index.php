@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container">
 <div class="alert alert-info">
-<p>DOYOK is Here</p>
+<p>Selamat datang di website Delima.</p>
 </div>
 <div class="table-responsive">
 <table class="table table-bordered table-hover table-striped torrent-list">
