@@ -8,12 +8,11 @@
 <link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/static/favicon.png">
 <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri() ?>/static/favicon.png">
 <link rel="mask-icon" href="<?php echo get_template_directory_uri() ?>/static/pinned-tab.svg" color="#3582F7">
-<link rel="alternate" type="application/rss+xml" href="https://nyaa.si/?page=rss"/>
 <meta property="og:site_name" content="<?php echo $_SERVER['SERVER_NAME'];?>">
 <meta property="og:title" content="Browse :: <?php echo $_SERVER['SERVER_NAME'];?>">
 <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/static/img/avatar/default.png">
-<meta name="description" content="A BitTorrent community focused on Eastern Asian media including anime, manga, music, and more">
-<meta name="keywords" content="torrents, bittorrent, torrent, anime, manga, sukebei, download, nyaa, magnet, magnets">
+<meta name="description" content="<?php bloginfo('description'); ?>">
+<meta name="keywords" content="fansub, delima, delsubs, imajisubs, anime, download">
 <meta property="og:description" content="<?php echo $_SERVER['SERVER_NAME'];?> homepage">
 
 <title><?php if(is_home()) { echo bloginfo("name");echo " | ";echo bloginfo("description"); } else { echo wp_title(" | ", false, right); } ?></title>
@@ -21,7 +20,8 @@
 
 <link href="<?php echo get_template_directory_uri() ?>/static/css/bootstrap.min.css" rel="stylesheet" id="bsThemeLink">
 <link href="<?php echo get_template_directory_uri() ?>/static/css/bootstrap-xl-mod.css" rel="stylesheet">
-<script>function toggleDarkMode(){"dark"===localStorage.getItem("theme")?setThemeLight():setThemeDark()}function setThemeDark(){bsThemeLink.href="<?php echo get_template_directory_uri() ?>/static/css/bootstrap-dark.min.css",localStorage.setItem("theme","dark")}function setThemeLight(){bsThemeLink.href="<?php echo get_template_directory_uri() ?>/static/css/bootstrap.min.css",localStorage.setItem("theme","light")}if("undefined"!=typeof Storage){var bsThemeLink=document.getElementById("bsThemeLink");"dark"===localStorage.getItem("theme")&&setThemeDark()}</script>
+<script>
+	function toggleDarkMode(){"dark"===localStorage.getItem("theme")?setThemeLight():setThemeDark()}function setThemeDark(){bsThemeLink.href="<?php echo get_template_directory_uri() ?>/static/css/bootstrap-dark.min.css",localStorage.setItem("theme","dark")}function setThemeLight(){bsThemeLink.href="<?php echo get_template_directory_uri() ?>/static/css/bootstrap.min.css",localStorage.setItem("theme","light")}if("undefined"!=typeof Storage){var bsThemeLink=document.getElementById("bsThemeLink");"dark"===localStorage.getItem("theme")&&setThemeDark()}</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css" integrity="sha256-an4uqLnVJ2flr7w0U74xiF4PJjO2N5Df91R2CUmCLCA=" crossorigin="anonymous"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous"/>
 
@@ -65,7 +65,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="/rules">Rules</a></li>
 								<li><a href="/help">Help</a></li>
-								<li><a href="https://github.com/nyaadevs/nyaa">Github</a></li>
+								<li><a href="https://github.com/delsubs/Website">Github</a></li>
 							</ul>
 						</li>
 						<li><a href="/?page=rss">RSS</a></li>
